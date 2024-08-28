@@ -1,0 +1,234 @@
+[
+    {
+        "id": 1,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": false,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": true,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": true,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": false,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": false,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": false,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": false,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "All Pages",
+        "selectAll": false,
+        "hover": false,
+        "disabled": true,
+        "options": [
+            {
+                "id": 1,
+                "name": "Page 1",
+                "select": false
+            },
+            {
+                "id": 2,
+                "name": "Page 2",
+                "select": false
+            },
+            {
+                "id": 3,
+                "name": "Page 3",
+                "select": false
+            },
+            {
+                "id": 4,
+                "name": "Page 4",
+                "select": false
+            }
+        ]
+    }
+]
