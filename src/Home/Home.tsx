@@ -1,27 +1,15 @@
 import { useState } from "react";
-
 import data from "../assets/data.json";
-
-import emptyCheck from "../assets/empty-check.png";
-import checkedIcon from "../assets/checked-icon.png";
-import disabledIcon from "../assets/disabled-checkbox.png";
+import Field from "../components/field";
+import Button from "../components/button";
+import Options from "../components/options";
 
 const Home = () => {
   const [response, setResponse] = useState<any>(data);
-  const fn_showOptions = (obj: any) => {
+  const fn_controlOptions = (obj: any, prevValue: boolean) => {
     const updatedResponse = response.map((item: any) => {
       if (item.id === obj.id) {
-        return { ...item, hover: true };
-      } else {
-        return { ...item, hover: false };
-      }
-    });
-    setResponse(updatedResponse);
-  };
-  const fn_hideOptions = (obj: any) => {
-    const updatedResponse = response.map((item: any) => {
-      if (item.id === obj.id) {
-        return { ...item, hover: false };
+        return { ...item, hover: !prevValue };
       }
       return item;
     });
@@ -69,9 +57,6 @@ const Home = () => {
     });
     setResponse(updatedArray);
   };
-  const fn_buttonClicked = (obj: any) => {
-    console.log(obj);
-  };
   return (
     <section className="home">
       <div className="main">
@@ -79,49 +64,15 @@ const Home = () => {
           <div
             key={index}
             className="field"
-            onMouseEnter={() => fn_showOptions(item)}
-            onMouseLeave={() => fn_hideOptions(item)}
+            onMouseEnter={() => fn_controlOptions(item, item.hover)}
+            onMouseLeave={() => fn_controlOptions(item, item.hover)}
           >
-            <div className="main-field">
-              <p className="text-[14px]">{item.name}</p>
-              <img
-                onClick={() => fn_clickSelectAll(item, item.selectAll)}
-                alt="empty-check"
-                src={
-                  item.disabled
-                    ? disabledIcon
-                    : item.selectAll
-                    ? checkedIcon
-                    : emptyCheck
-                }
-                className="checkbox"
-              />
-            </div>
+            <Field item={item} fn_clickSelectAll={fn_clickSelectAll} />
             <div
               className={`options-container ${item.hover ? "show" : "hide"}`}
             >
-              <div className="options">
-                {item.options.map((option: any) => (
-                  <div className="option" key={option.id}>
-                    <p className="text-[14px]">{option.name}</p>
-                    <img
-                      onClick={() => fn_clickSelect(item, option)}
-                      alt="empty-check"
-                      src={
-                        item.disabled
-                          ? disabledIcon
-                          : option.select
-                          ? checkedIcon
-                          : emptyCheck
-                      }
-                      className="checkbox"
-                    />
-                  </div>
-                ))}
-              </div>
-              <button className="button" onClick={() => fn_buttonClicked(item)}>
-                Done
-              </button>
+              <Options item={item} fn_clickSelect={fn_clickSelect} />
+              <Button item={item} />
             </div>
           </div>
         ))}
